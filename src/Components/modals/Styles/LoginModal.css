@@ -1,0 +1,14 @@
+body{
+    width: 1585px;
+}
+
+.main-login-container{
+width: 650px;
+height: 565px;
+angle: 0 deg;
+opacity: 1;
+margin-top: 98px;
+margin-left: 395px;
+border: 2px solid black;
+
+}

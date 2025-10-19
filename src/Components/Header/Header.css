@@ -1,0 +1,114 @@
+.main-container {
+  width: 100%;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.35);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+}
+.logo-link {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: rgba(237, 19, 19, 1);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+}
+.nav-list {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: rgba(237, 19, 19, 1);
+}
+.login-link {
+  color: rgba(237, 19, 19, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid rgba(237, 19, 19, 1);
+  border-radius: 25px;
+  padding: 6px 20px;
+  transition: all 0.3s;
+}
+.login-link:hover {
+  background: rgba(237, 19, 19, 1);
+  color: #fff;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1201;
+}
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  backdrop-filter: blur(3px);
+  z-index: 1100;
+  opacity: 0;
+
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes linkFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+

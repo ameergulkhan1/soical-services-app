@@ -1,0 +1,64 @@
+/* ===== Base ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+/* Landing page container */
+.landingpage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ===== Footer Section ===== */
+.footer-box {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(245, 245, 245, 0.8);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Content Container ===== */
+.content-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6vw;
+  flex-wrap: wrap;
+}
+
+/* ===== Logo Section ===== */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-container h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
+}
+

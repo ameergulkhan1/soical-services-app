@@ -1,0 +1,176 @@
+.main-service-container {
+  width: 100%;
+  min-height: 70vh;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #500101 0%, #a00303 100%);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+.text-contain {
+  width: 500px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.text-contain h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #fff;
+}
+
+.main-box {
+  width: 310px;
+  margin: 60px auto 0;
+  position: relative;
+}
+
+.sortby-container {
+  width: 290px;
+  height: 40px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sortby-container h2 {
+  font-size: 16px;
+  color: white;
+  margin-left: 5px;
+}
+
+.option-container {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 2px solid wheat;
+  background-color: aliceblue;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.option-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+}
+
+.drop-box {
+  width: 200px;
+  border: 2px solid white;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 90px;
+  z-index: 3;
+}
+
+.drop-box p {
+  color: black;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.card-boxes {
+  width: 90%;
+  max-width: 1411px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px auto 0;
+  height: 50px;
+  align-items: center;
+}
+
+.card-boxes p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.cards-items-main-box {
+  width: 90%;
+  max-width: 1500px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-main-box {
+  width: 100%;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.CardButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-details,
+.btn-order {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-details {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.btn-order {
+  background-color: #007bff;
+  color: white;
+}
+
+.Description {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.show-more-btn {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #a00303;
+  border: 2px solid #a00303;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.show-more-btn:hover {
+  background-color: #a00303;
+  color: #fff;
+}

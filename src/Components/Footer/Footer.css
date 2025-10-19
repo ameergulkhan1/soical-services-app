@@ -1,0 +1,109 @@
+.footer {
+  width: 1440px;
+  height: 598px;
+  margin-left: 70px;
+  opacity: 1;
+  background-color: black;
+  /* border: 2px solid black; */
+}
+
+.footer h1 {
+  color: rgba(241, 130, 0, 1);
+  margin-left:0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.footer p {
+  width: 799px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.footer-content {
+  width: 1052px;
+  height: 315px;
+  margin: 40px auto;
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 2px solid white; */
+}
+
+.youtube-list,
+.twitch-list,
+.instagram-list {
+  width: 310px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid white; */
+  opacity: 1;
+  padding-top: 10px;
+}
+
+/* === Button Styles === */
+.youtube-list button,
+.twitch-list button,
+.instagram-list button {
+  width: 180px;
+  height: 53px;
+  border: none;
+  background: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+/* === Platform-Specific Button Colors === */
+.youtube-list button {
+  color: rgba(237, 19, 19, 0.7);
+}
+
+.twitch-list button {
+  color: rgba(0, 140, 241, 0.7);
+}
+
+.instagram-list button {
+  background: linear-gradient(
+    0deg,
+    rgba(180, 41, 176, 0.7) 0%,
+    rgba(255, 48, 137, 0.7) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.youtube-list p,
+.twitch-list p,
+.instagram-list p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 5px 0;
+}
+.footer footer{
+    width: 404px;
+height: 30px;
+margin-top: 100px;
+margin-left: 518px;
+angle: 0deg;
+opacity: 1;
+color: rgba(255, 255, 255, 1);
+}

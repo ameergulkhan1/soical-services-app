@@ -1,0 +1,175 @@
+.main-reviewslanding-contanair {
+  width: 100%;
+  height: 170vh;
+  /* border: 2px solid black; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-animantion {
+  width: 1180px;
+  height: 150px;
+  display: flex;
+  opacity: 1;
+  margin-left: 160px;
+}
+
+.customer-text {
+  width: 196px;
+  margin: 20px 0 0 92px;
+  text-align: center;
+}
+
+.customer-text h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 100%;
+  color: rgba(237, 19, 19, 1);
+}
+
+.customer-text p {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: black;
+  margin: 0;
+}
+
+.image-box {
+  width: 1180px;
+  height: 650px;
+  margin-left: 200px;
+/* margin-top: 100px; */
+object-fit: cover;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.feedback-boxes {
+  width: 1438px;
+  height: 542px;
+
+  display: flex;
+  overflow-x: auto; /* enables horizontal scrolling */
+  overflow-y: hidden;
+  scroll-behavior: smooth; /* smooth scrolling */
+  gap: 20px; /* space between chatboxes */
+  padding: 20px;
+  box-sizing: border-box;
+
+
+}
+
+.feedback-boxes::-webkit-scrollbar {
+  height: 10px;
+}
+
+.feedback-boxes::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+
+.feedback-boxes::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.feedback-box h1 {
+  width: 429px;
+  margin-left: 500px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.feedback-boxes {
+  width: 1438px;
+  height: 542px;
+ 
+}
+
+
+.chatbox {
+  flex: 0 0 auto; 
+  width: 550px;
+  height: 500px;
+  border-radius: 30px;
+border: 2px solid black;
+  background-color: #fff;
+}
+
+.profilebox {
+  width: 500px;
+  height: 100px;
+
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.picture-user {
+  width: 100px;
+  height: 100px;
+
+}
+
+.picture-user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating-name {
+  width: 300px;
+  height: 80px;
+
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 8px 0; 
+}
+
+.rating-name h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  margin: 0 0 8px 0; 
+  color: #000;
+}
+
+.rating-name img {
+  width: 120px;
+  height: 18px;
+  object-fit: contain;
+}
+.text-paragragh{
+  width: 476px;
+height: 334px;
+angle: 0 deg;
+margin-left: 40px;
+opacity: 1;
+
+margin-top: 10px;
+object-fit: cover;
+}
+.text-paragragh{
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 25px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+}

@@ -1,0 +1,132 @@
+.main-FAQS-container{
+    width: 1181.9599609375px;
+height: 962.5px;
+angle: 0 deg;
+opacity: 1;
+/* top: 3852px; */
+margin-top: 100px;
+margin-left: 124px;
+/* border: 2px solid black; */
+
+}
+.headings{
+    width: 1078px;
+height: 170px;
+angle: 0 deg;
+opacity: 1;
+margin-left: 50px;
+margin-top: 40px;
+flex-direction: column;
+/* border: 2px solid black; */
+
+}
+.headings h1{
+    width: 539px;
+height: 57px;
+angle: 0 deg;
+opacity: 1;
+margin-left: 300px;
+font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 38px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+.headings p{
+    width: 1078px;
+height: 48px;
+angle: 0 deg;
+opacity: 1;
+/* top: 3917px;
+left: 179px; */
+font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+
+}
+.questionbox {
+  width: 90%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+ 
+}
+
+.faq-item {
+ 
+  border-radius: 12px;
+  padding: 46px 50px;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+background: rgba(255, 255, 255, 1);
+box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.faq-item:hover {
+  background-color: #f8f8f8;
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.faq-item.open {
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.button-faqs{
+    width: 250px;
+height: 70px;
+angle: 0 deg;
+opacity: 1;
+/* top: 4695px;
+
+left: 605px; */
+margin-left: 500px;
+border-radius: 40px;
+border-width: 1.5px;
+
+}
+.button-faqs button{
+    width: 250px;
+height: 70px;
+angle: 0 deg;
+opacity: 1;
+top: 4695px;
+left: 605px;
+border-radius: 40px;
+border-width: 1.5px;
+border: 1.5px solid rgba(237, 19, 19, 1);
+font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color:  rgba(237, 19, 19, 1);
+
+
+
+}
