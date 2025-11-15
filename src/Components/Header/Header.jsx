@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
+
 import "./Header.css";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+ 
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
@@ -29,6 +33,7 @@ function Header() {
             <li><Link to="/terms" className="nav-link">TERMS & CONDITIONS</Link></li>
             <li><Link to="/contact" className="nav-link">CONTACT US</Link></li>
             <li><Link to="/login" className="login-link">Login</Link></li>
+            <li><Link to="/signup" className="signup-link">Sign Up</Link></li>
           </ul>
         </div>
       </nav>

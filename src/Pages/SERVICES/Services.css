@@ -1,168 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .main-services-container {
-  width: 1585px;
-  height: auto;
-  top: 80px;
-  angle: 0 deg;
-  opacity: 1;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #500101 0%, #a00303 100%);
+  display: flex;
   flex-direction: column;
-  border: 2px solid black;
-  background: linear-gradient(180deg, #500101 0%, #A00303 100%);
+  align-items: center;
+  padding: 80px 20px;
+  color: white;
+  overflow-x: hidden;
 }
 
 .text-contain {
-  width: 500px;
-  height: 57px;
-  margin-top: 130px;
-  margin-left: 580px;
-  opacity: 1;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .text-contain h1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: Poppins;
   font-weight: 600;
   font-size: 38px;
-  line-height: 100%;
-  color: rgba(255, 255, 255, 1);
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.main-box {
+  position: relative;
+  margin-bottom: 40px;
 }
 
 .sortby-container {
-  width: 290px;
-  height: 40px;
-  margin-top: 10px;
-  border: 2px solid white;
   display: flex;
   align-items: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sortby-container:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .sortby-container h2 {
   margin: 0;
   font-size: 16px;
   color: white;
-  margin-left: 5px;
 }
 
 .option-container {
-  width: 200px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  border: 2px solid wheat;
-  background-color: aliceblue;
-  margin-left: 20px;
-}
-
-.option-container h2 {
-  width: 91px;
-  height: 21px;
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  color: black;
-  margin-top: 13px;
-}
-
-.option-container img {
-  width: 19px;
-  height: 8px;
-  margin-top: 15px;
-  margin-left: 60px;
-}
-
-.main-box {
-  width: 310px;
-  height: auto;
-  margin-top: 90px;
-  margin-left: 39px;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-}
-
-.drop-box {
-  width: 200px;
-  height: 170px;
-  margin-top: 0px;
-  margin-left: 90px;
-  border: 2px solid white;
-  background: white;
-  position: absolute;
-  top: 100%;
-  left: 90px;
-  z-index: 3;
-}
-
-.drop-box p {
-  color: black;
-  margin: 8px;
-  cursor: pointer;
-}
-
-.card-boxes {
-  width: 1411px;
-  display: flex;
-  height: 50px;
-  margin-top: 10px;
-  margin-left: 39px;
-  border-radius: 10px;
-  border: 2px solid white;
-  gap: 80px;
-  position: relative;
-  z-index: 1;
-}
-
-.card-boxes p {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: 14px;
-  width: 82px;
-  height: 21px;
-  color: white;
-  opacity: 1;
-}
-
-.cards-items-main-box {
-  width: 1500px;
-  height: auto;
-  margin-top: 102px;
-  margin-left: 39px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.item-main-box {
-  width: 100%;
-  min-height: 80px;
-  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 10px 20px;
-  color: white;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  width: 200px;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.option-container:hover {
+  background: #f4f4f4;
+}
+
+.option-container img {
+  width: 16px;
+  height: auto;
+}
+
+.drop-box {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.drop-box p {
+  color: #333;
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.drop-box p:hover {
+  background: rgba(237, 19, 19, 0.1);
+}
+
+.card-boxes {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 95%;
+  max-width: 1400px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card-boxes p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.cards-items-main-box {
+  width: 95%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.item-main-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.item-main-box:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .CardButtons {
   display: flex;
   gap: 10px;
-  margin-top: 5px;
 }
 
 .btn-details,
 .btn-order {
-  padding: 6px 12px;
+  padding: 6px 14px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .btn-details {
@@ -170,30 +174,29 @@
   color: #333;
 }
 
+.btn-details:hover {
+  background-color: #e0e0e0;
+}
+
 .btn-order {
   background-color: #007bff;
   color: white;
 }
 
+.btn-order:hover {
+  background-color: #0056b3;
+}
+
 .item-main-box.expanded {
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #ffffff;
   color: black;
   border: 2px solid #ccc;
-  border-radius: 10px;
-  width: 617px;
-  height: auto;
-  padding: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 20px;
 }
 
-.item-main-box.expanded p {
-  font-size: 14px;
-  line-height: 20px;
-  margin: 3px 0;
-  color: black;
-}
 .Description-box {
   width: 100%;
   background: #ffffff;
@@ -207,7 +210,29 @@
 
 .Description-box p {
   font-size: 14px;
-  line-height: 20px;
   margin: 0;
+  line-height: 1.5;
 }
 
+@media (max-width: 1024px) {
+  .card-boxes,
+  .cards-items-main-box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .item-main-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sortby-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .drop-box {
+    left: 0;
+    width: 180px;
+  }
+}

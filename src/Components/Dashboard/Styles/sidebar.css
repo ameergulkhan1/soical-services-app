@@ -1,0 +1,61 @@
+/* Sidebar styles */
+.dashboard-sidebar {
+  width: 16rem; /* w-64 */
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.funds-box {
+  background: linear-gradient(292.62deg, #ED1313 19.7%, #F1CB00 88.41%);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(237, 19, 19, 0.15);
+  color: white;
+}
+
+.funds-label { 
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.funds-amount { 
+  margin-top: 0.75rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.funds-add-btn { 
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #ED1313;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.funds-add-btn:hover { 
+  background: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-nav { margin-top: 1rem; display:flex; flex-direction:column; gap:0.35rem; }
+.dashboard-nav a, .dashboard-nav button { display:flex; align-items:center; gap:0.75rem; padding:0.5rem 0.75rem; border-radius:0.375rem; text-decoration:none; color:#0f172a; background:transparent; border:none; cursor:pointer; }
+.dashboard-nav a:hover, .dashboard-nav button:hover { background:#eef2ff }
+.dashboard-nav .active { background:#fff; box-shadow: 0 6px 18px rgba(2,6,23,0.04); }
+
+.logout-btn { margin-top: 0.75rem; background:transparent; }

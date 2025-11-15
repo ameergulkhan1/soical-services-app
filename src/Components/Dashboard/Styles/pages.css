@@ -1,0 +1,3 @@
+/* Generic dashboard page styles */
+.page-card { background:#fff; border-radius:0.5rem; padding:1rem; box-shadow:0 6px 18px rgba(2,6,23,0.04) }
+.page-title { font-size:1.25rem; font-weight:600; margin-bottom:0.75rem }

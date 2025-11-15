@@ -1,18 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import "./Services.css";
 import sortarrow from "../../Assets/arrow.svg";
 import rating1 from "../../Assets/Rating/rating.svg";
 import rating2 from "../../Assets/Rating/rating (1).svg";
-import items from "../../Components/Item.json";
+import itemsData from "../../Components/Item.json";
 
 function Services() {
   const ratings = { rating1, rating2 };
+  const [sortBy, setSortBy] = useState("Most Popular");
   const [open, setOpen] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
 
   const toggleDescription = (id) => {
-    setSelectedId(selectedId === id ? null : id);
+    setSelectedId((prevId) => (prevId === id ? null : id));
   };
+
+  const sortedItems = useMemo(() => {
+    const sorted = [...itemsData];
+    switch (sortBy) {
+      case "High price to low":
+        return sorted.sort((a, b) => b.priceperday - a.priceperday);
+      case "Low price to High":
+        return sorted.sort((a, b) => a.priceperday - b.priceperday);
+      case "Highest rated":
+        const getRatingValue = (r) => (r === "rating2" ? 2 : 1);
+        return sorted.sort(
+          (a, b) => getRatingValue(b.Rated) - getRatingValue(a.Rated)
+        );
+      default:
+        return sorted;
+    }
+  }, [sortBy]);
 
   return (
     <div className="main-services-container">
@@ -22,18 +40,31 @@ function Services() {
 
       <div className="main-box">
         <div className="sortby-container">
-          <h2>sort by :</h2>
+          <h2>Sort by:</h2>
           <div className="option-container" onClick={() => setOpen(!open)}>
-            <h2>Most Popular</h2>
+            <h2>{sortBy}</h2>
             <img src={sortarrow} alt="arrow" />
           </div>
         </div>
 
         {open && (
           <div className="drop-box">
-            <p>High price to low</p>
-            <p>Low price to High</p>
-            <p>Highest rated</p>
+            {[
+              "Most Popular",
+              "High price to low",
+              "Low price to High",
+              "Highest rated",
+            ].map((option) => (
+              <p
+                key={option}
+                onClick={() => {
+                  setSortBy(option);
+                  setOpen(false);
+                }}
+              >
+                {option}
+              </p>
+            ))}
           </div>
         )}
       </div>
@@ -52,8 +83,13 @@ function Services() {
       </div>
 
       <div className="cards-items-main-box">
-        {items.map((item) => (
-          <div className="item-main-box" key={item.id}>
+        {sortedItems.map((item) => (
+          <div
+            key={item.id}
+            className={`item-main-box ${
+              selectedId === item.id ? "expanded" : ""
+            }`}
+          >
             <p className="ID">{item.id}</p>
             <p className="Services">{item.serv}</p>
             <p className="Rated">

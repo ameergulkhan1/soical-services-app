@@ -2,7 +2,7 @@
   width: 100%;
   backdrop-filter: blur(15px);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.35);
+  background: white;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -94,6 +94,30 @@
   z-index: 1100;
   opacity: 0;
 
+}
+.signup-link{
+    color: rgba(237, 19, 19, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid rgba(237, 19, 19, 1);
+  border-radius: 25px;
+  padding: 6px 20px;
+  transition: all 0.3s;  color: rgba(237, 19, 19, 1);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid rgba(237, 19, 19, 1);
+  border-radius: 25px;
+  padding: 6px 20px;
+  transition: all 0.3s;
+
+}
+.signup-link:hover {
+  background: rgba(237, 19, 19, 1);
+  color: #fff;
 }
 @keyframes fadeIn {
   to {

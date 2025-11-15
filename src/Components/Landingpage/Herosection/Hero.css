@@ -131,7 +131,7 @@ margin-top: 22px;
 
   .signupbutton {
     width: 140px;
-    height: 60px;
+    height: 57px;
     border: 2px solid black;
     border-left: none; /* removes left border so it merges with input */
     border-top-right-radius: 40px;
@@ -142,25 +142,29 @@ margin-top: 22px;
     background: rgba(237, 19, 19, 1);
 
   }
-.container-Or {
+.or-dividers {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px; 
- margin-top: 30px;
+  margin-left: 150px;
+  margin-top: 20px;
+  width: 50%;
 }
 
-.container-Or img {
-  flex: 1; 
-  height: 2px; 
-  object-fit: contain;
+.or-dividers::before,
+.or-dividers::after {
+  content: "";
+  flex: 1;
+  border-bottom: 0.7px solid rgba(0, 0, 0, 1);
+  margin: 0 5px;
 }
 
-.container-Or h1 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0 10px; 
+.or-dividers span {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .google-button-box{

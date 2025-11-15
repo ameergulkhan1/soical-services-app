@@ -22,10 +22,8 @@ wallet Anytime Without Any Charges .</p>
     <input type="email" id="email" name="email" className="lableemail" placeholder="example02@gmail.com" />
     <button type="submit" className="signupbutton">Signup</button>
   </form>
-<div className="container-Or">
-  <img src={vectorimage} alt="vector" />
-  <h1>OR</h1>
-  <img src={vectorimage} alt="vector" className="vectorimage" />
+<div className="or-dividers">
+  <span>OR</span>
 </div>
 <div className="google-button-box">
     <img src={googlelogo} alt="googlelogo" />
